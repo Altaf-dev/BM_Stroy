@@ -25,7 +25,7 @@ gulp.task('sass', function () {
             overrideBrowserslist: ['last 7 versions'],
             cascade: false
         }))                                         // добавляем префиксы для кросбраузерности
-        .pipe(csso())                               // минимизируем файл css
+        // .pipe(csso())                               // минимизируем файл css
         .pipe(gulp.dest('build/css'))              // перемещаем файл в папку builb/css
         .pipe(browserSync.reload({                  // обновляем браузер на том же месте
             stream:true
