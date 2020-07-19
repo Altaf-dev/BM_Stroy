@@ -15,6 +15,9 @@ a,li,ul
   list-style: none
   text-decoration: none
   background-color: transparent
+button
+  outline: none
+  border: none
 .container
   width: 100%
   max-width: 1200px
@@ -111,6 +114,18 @@ a,li,ul
           text-align: center
         .btn:first-child
           margin-right: 20px
+    .header-menu
+      display: none
+      .header-menu-btn
+        display: block
+        border-radius: 25px
+        padding: 17px 25px
+        background-color: #ffffff
+        color: #7e8189
+        font-size: 1.4rem
+        font-weight: 700
+        align-items: center
+        text-align: center
 @media screen and (max-width: 1199px)
   .container
     .header
@@ -133,4 +148,21 @@ a,li,ul
             font-size: 1.2rem
           .btn:last-child
             margin-top: 10px
-
+@media screen and (max-width: 768px)
+  .container
+    .header
+      .logo
+        border-right: none
+        .logo-img
+          width: 43px
+          height: 43px
+        .logo-description
+          .logo-name
+            width: 95px
+            font-size: 1.6rem
+          .logo-text
+            display: none
+      .contacts
+        display: none
+      .header-menu
+        display: block
