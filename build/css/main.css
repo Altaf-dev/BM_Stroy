@@ -154,6 +154,8 @@ a, li, ul {
     display: block;
     text-align: center; }
     .container .header .contacts .contacts-mail-phone .contacts-tel {
+      margin-right: 0;
+      margin-left: 0;
       margin-top: 10px; }
       .container .header .contacts .contacts-mail-phone .contacts-tel .tel:nth-child(2):before,
       .container .header .contacts .contacts-mail-phone .contacts-tel .tel:nth-child(2):after {
