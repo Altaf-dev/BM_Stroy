@@ -24,6 +24,7 @@ button
   margin: 0 auto
   padding: 0 20px
   .header
+    position: relative
     display: flex
     justify-content: space-between
     align-items: center
@@ -126,6 +127,53 @@ button
         font-weight: 700
         align-items: center
         text-align: center
+      .mobile-menu
+        position: absolute
+        z-index: 50
+        left: -100%
+        top: 80px
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 100%
+        padding-top: 40px
+        background-color: #464b56
+        transition: all .7s
+        .mobile-menu-mail
+          font-size: 1.6rem
+          font-weight: 400
+          color: #ffffff
+          text-decoration: underline
+        .mobile-menu-tel
+          display: flex
+          flex-direction: column
+          text-align: center
+          margin: 20px 0
+          .mobile-menu-tel
+            display: block
+            position: relative
+            font-size: 1.6rem
+            font-weight: 400
+            color: #ffffff
+            margin: 2px 0
+        .mobile-menu-buttons
+          display: flex
+          flex-direction: column
+          .mobile-menu-btn
+            display: block
+            border-radius: 25px
+            padding: 17px 25px
+            background-color: #ffffff
+            color: #7e8189
+            font-size: 1.4rem
+            font-weight: 700
+            align-items: center
+            text-align: center
+            margin-bottom: 20px
+      .active
+        left: 0
+  .main
+
 @media screen and (max-width: 1199px)
   .container
     .header

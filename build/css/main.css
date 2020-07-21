@@ -32,6 +32,7 @@ button {
   margin: 0 auto;
   padding: 0 20px; }
   .container .header {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -166,6 +167,72 @@ button {
         -ms-flex-align: center;
         align-items: center;
         text-align: center; }
+      .container .header .header-menu .mobile-menu {
+        position: absolute;
+        z-index: 50;
+        left: -100%;
+        top: 80px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 40px;
+        background-color: #464b56;
+        -webkit-transition: all .7s;
+        -o-transition: all .7s;
+        transition: all .7s; }
+        .container .header .header-menu .mobile-menu .mobile-menu-mail {
+          font-size: 1.6rem;
+          font-weight: 400;
+          color: #ffffff;
+          text-decoration: underline; }
+        .container .header .header-menu .mobile-menu .mobile-menu-tel {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          text-align: center;
+          margin: 20px 0; }
+          .container .header .header-menu .mobile-menu .mobile-menu-tel .mobile-menu-tel {
+            display: block;
+            position: relative;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #ffffff;
+            margin: 2px 0; }
+        .container .header .header-menu .mobile-menu .mobile-menu-buttons {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column; }
+          .container .header .header-menu .mobile-menu .mobile-menu-buttons .mobile-menu-btn {
+            display: block;
+            border-radius: 25px;
+            padding: 17px 25px;
+            background-color: #ffffff;
+            color: #7e8189;
+            font-size: 1.4rem;
+            font-weight: 700;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 20px; }
+      .container .header .header-menu .active {
+        left: 0; }
 
 @media screen and (max-width: 1199px) {
   .container .header .contacts .contacts-mail-phone {
