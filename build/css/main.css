@@ -53,14 +53,25 @@ button {
       -ms-flex-align: center;
       align-items: center;
       border-right: 1px solid #606775; }
+      @media screen and (max-width: 768px) {
+        .container .header .logo {
+          border-right: none; } }
       .container .header .logo .logo-img {
         margin-right: 20px; }
+        @media screen and (max-width: 768px) {
+          .container .header .logo .logo-img {
+            width: 43px;
+            height: 43px; } }
       .container .header .logo .logo-description .logo-name {
         text-transform: uppercase;
         font-size: 2rem;
         font-weight: 700;
         color: #ffffff;
         font-family: Times New Roman,serif; }
+        @media screen and (max-width: 768px) {
+          .container .header .logo .logo-description .logo-name {
+            width: 95px;
+            font-size: 1.6rem; } }
         .container .header .logo .logo-description .logo-name span {
           color: #ff1515; }
       .container .header .logo .logo-description .logo-text {
@@ -69,6 +80,9 @@ button {
         font-size: 1.4rem;
         font-weight: 400;
         color: #ffffff; }
+        @media screen and (max-width: 768px) {
+          .container .header .logo .logo-description .logo-text {
+            display: none; } }
     .container .header .contacts {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -76,6 +90,9 @@ button {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
+      @media screen and (max-width: 768px) {
+        .container .header .contacts {
+          display: none; } }
       .container .header .contacts .contacts-mail-phone {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -83,6 +100,10 @@ button {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center; }
+        @media screen and (max-width: 1199px) {
+          .container .header .contacts .contacts-mail-phone {
+            display: block;
+            text-align: center; } }
         .container .header .contacts .contacts-mail-phone .contacts-mail {
           font-size: 1.6rem;
           font-weight: 400;
@@ -100,6 +121,11 @@ button {
           margin-right: 30px;
           margin-left: 30px;
           text-align: center; }
+          @media screen and (max-width: 1199px) {
+            .container .header .contacts .contacts-mail-phone .contacts-tel {
+              margin-right: 0;
+              margin-left: 0;
+              margin-top: 10px; } }
           .container .header .contacts .contacts-mail-phone .contacts-tel .tel {
             display: block;
             position: relative;
@@ -121,6 +147,9 @@ button {
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
+            @media screen and (max-width: 1199px) {
+              .container .header .contacts .contacts-mail-phone .contacts-tel .tel:nth-child(2):before {
+                display: none; } }
           .container .header .contacts .contacts-mail-phone .contacts-tel .tel:nth-child(2):after {
             content: "";
             right: 0;
@@ -135,10 +164,16 @@ button {
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
+            @media screen and (max-width: 1199px) {
+              .container .header .contacts .contacts-mail-phone .contacts-tel .tel:nth-child(2):after {
+                display: none; } }
       .container .header .contacts .contacts-buttons {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
+        @media screen and (max-width: 1199px) {
+          .container .header .contacts .contacts-buttons {
+            display: block; } }
         .container .header .contacts .contacts-buttons .btn {
           display: block;
           border-radius: 25px;
@@ -151,10 +186,21 @@ button {
           -ms-flex-align: center;
           align-items: center;
           text-align: center; }
+          @media screen and (max-width: 1199px) {
+            .container .header .contacts .contacts-buttons .btn {
+              width: 150px;
+              padding: 13px 0;
+              font-size: 1.2rem; } }
         .container .header .contacts .contacts-buttons .btn:first-child {
           margin-right: 20px; }
+          @media screen and (max-width: 1199px) {
+            .container .header .contacts .contacts-buttons .btn:first-child {
+              margin-top: 10px; } }
     .container .header .header-menu {
       display: none; }
+      @media screen and (max-width: 768px) {
+        .container .header .header-menu {
+          display: block; } }
       .container .header .header-menu .header-menu-btn {
         display: block;
         border-radius: 25px;
@@ -233,39 +279,3 @@ button {
             margin-bottom: 20px; }
       .container .header .header-menu .active {
         left: 0; }
-
-@media screen and (max-width: 1199px) {
-  .container .header .contacts .contacts-mail-phone {
-    display: block;
-    text-align: center; }
-    .container .header .contacts .contacts-mail-phone .contacts-tel {
-      margin-right: 0;
-      margin-left: 0;
-      margin-top: 10px; }
-      .container .header .contacts .contacts-mail-phone .contacts-tel .tel:nth-child(2):before,
-      .container .header .contacts .contacts-mail-phone .contacts-tel .tel:nth-child(2):after {
-        display: none; }
-  .container .header .contacts .contacts-buttons {
-    display: block; }
-    .container .header .contacts .contacts-buttons .btn {
-      width: 150px;
-      padding: 13px 0;
-      font-size: 1.2rem; }
-    .container .header .contacts .contacts-buttons .btn:last-child {
-      margin-top: 10px; } }
-
-@media screen and (max-width: 768px) {
-  .container .header .logo {
-    border-right: none; }
-    .container .header .logo .logo-img {
-      width: 43px;
-      height: 43px; }
-    .container .header .logo .logo-description .logo-name {
-      width: 95px;
-      font-size: 1.6rem; }
-    .container .header .logo .logo-description .logo-text {
-      display: none; }
-  .container .header .contacts {
-    display: none; }
-  .container .header .header-menu {
-    display: block; } }
