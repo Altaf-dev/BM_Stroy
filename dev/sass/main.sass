@@ -210,4 +210,36 @@ button
       .active
         left: 0
   .main
+    .main-image
+      position: relative
+      .circle
+        position: absolute
+        z-index: 25
+        width: 530px
+        height: 530px
+        border-radius: 50%
+        border: 2px solid $color-white
+        animation-name: rotation
+        animation-duration: 30s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+      @keyframes rotation
+        0%
+          transform: rotate(0deg)
+
+        100%
+          transform: rotate(360deg)
+      .circle:before
+        content: ""
+        position: absolute
+        right: 50%
+        top: -6px
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        background-color: $color-white
+      .cable-img
+        position: absolute
+        z-index: 30
+
 
