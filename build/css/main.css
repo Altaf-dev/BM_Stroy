@@ -337,6 +337,33 @@ button {
       @media screen and (max-width: 1199px) {
         .container .main .main-promo .main-cable .cable:nth-child(3):after {
           display: none; } }
+    .container .main .main-promo .main-promo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 580px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      @media screen and (max-width: 1199px) {
+        .container .main .main-promo .main-promo {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
+          align-items: start; } }
+      .container .main .main-promo .main-promo .main-promo-title {
+        font-size: 6rem;
+        font-weight: 800; }
+      .container .main .main-promo .main-promo .main-promo-text {
+        margin-left: 20px;
+        line-height: 20px;
+        font-size: 1.6rem; }
+        @media screen and (max-width: 1199px) {
+          .container .main .main-promo .main-promo .main-promo-text {
+            margin-left: 0; } }
     .container .main .main-image {
       position: absolute;
       width: 535px;
