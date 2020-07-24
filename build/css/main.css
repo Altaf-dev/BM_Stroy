@@ -196,6 +196,9 @@ button {
           @media screen and (max-width: 1199px) {
             .container .header .contacts .contacts-buttons .btn:first-child {
               margin-top: 10px; } }
+        @media screen and (max-width: 1199px) {
+          .container .header .contacts .contacts-buttons .btn:last-child {
+            margin-top: 10px; } }
     .container .header .header-menu {
       display: none; }
       @media screen and (max-width: 768px) {
@@ -279,23 +282,39 @@ button {
             margin-bottom: 20px; }
       .container .header .header-menu .active {
         left: 0; }
-  .container .main .main-image {
+  .container .main {
     position: relative; }
-    .container .main .main-image .circle {
+    .container .main .main-image {
       position: absolute;
-      z-index: 25;
-      width: 530px;
-      height: 530px;
-      border-radius: 50%;
-      border: 2px solid #ffffff;
-      -webkit-animation-name: rotation;
-      animation-name: rotation;
-      -webkit-animation-duration: 30s;
-      animation-duration: 30s;
-      -webkit-animation-iteration-count: infinite;
-      animation-iteration-count: infinite;
-      -webkit-animation-timing-function: linear;
-      animation-timing-function: linear; }
+      width: 535px;
+      height: 535px;
+      right: -45px;
+      top: 30px; }
+      .container .main .main-image .cable-img {
+        position: absolute;
+        z-index: 30;
+        top: 2%;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        transform: translate(-50%); }
+      .container .main .main-image .circle-1 {
+        position: absolute;
+        z-index: 25;
+        width: 530px;
+        height: 530px;
+        border-radius: 50%;
+        border: 1px solid #6b6f78;
+        top: 0;
+        left: 0;
+        -webkit-animation-name: rotation;
+        animation-name: rotation;
+        -webkit-animation-duration: 30s;
+        animation-duration: 30s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear; }
 
 @-webkit-keyframes rotation {
   0% {
@@ -312,15 +331,98 @@ button {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
-    .container .main .main-image .circle:before {
-      content: "";
-      position: absolute;
-      right: 50%;
-      top: -6px;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: #ffffff; }
-    .container .main .main-image .cable-img {
-      position: absolute;
-      z-index: 30; }
+      .container .main .main-image .circle-1:before {
+        content: "";
+        position: absolute;
+        right: 50%;
+        top: -5px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: #ffffff; }
+      .container .main .main-image .circle-2 {
+        position: absolute;
+        z-index: 25;
+        width: 520px;
+        height: 520px;
+        border-radius: 50%;
+        border: 1px solid #6b6f78;
+        left: 1%;
+        top: 1%;
+        -webkit-animation-name: rotation;
+        animation-name: rotation;
+        -webkit-animation-duration: 20s;
+        animation-duration: 20s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear; }
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+      .container .main .main-image .circle-2:before {
+        content: "";
+        position: absolute;
+        right: 50%;
+        top: -15px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #ffffff; }
+      .container .main .main-image .circle-3 {
+        position: absolute;
+        z-index: 25;
+        width: 465px;
+        height: 465px;
+        border-radius: 50%;
+        border: 1px solid #6b6f78;
+        left: 6%;
+        top: 6%;
+        -webkit-animation-name: rotation;
+        animation-name: rotation;
+        -webkit-animation-duration: 40s;
+        animation-duration: 40s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear; }
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+      .container .main .main-image .circle-3:before {
+        content: "";
+        position: absolute;
+        right: 50%;
+        top: -37px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: #ffffff; }
+      .container .main .main-image .circle-4 {
+        position: absolute;
+        z-index: 25;
+        width: 440px;
+        height: 440px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        left: 8%;
+        top: 8%; }
+      .container .main .main-image .circle-5 {
+        position: absolute;
+        z-index: 25;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        background-color: #464b56;
+        left: 20%;
+        top: 20%; }

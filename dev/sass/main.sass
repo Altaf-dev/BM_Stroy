@@ -150,6 +150,9 @@ button
           margin-right: 20px
           @media screen and (max-width: 1199px)
             margin-top: 10px
+        .btn:last-child
+          @media screen and (max-width: 1199px)
+            margin-top: 10px
     .header-menu
       display: none
       @media screen and (max-width: 768px)
@@ -210,15 +213,32 @@ button
       .active
         left: 0
   .main
+    position: relative
+    .main-promo
+      //position: relative
+      //width: 670px
+      //height: 300px
     .main-image
-      position: relative
-      .circle
+      position: absolute
+      width: 535px
+      height: 535px
+      right: -45px
+      top: 30px
+      .cable-img
+        position: absolute
+        z-index: 30
+        top: 2%
+        left: 50%
+        transform: translate(-50%)
+      .circle-1
         position: absolute
         z-index: 25
         width: 530px
         height: 530px
         border-radius: 50%
-        border: 2px solid $color-white
+        border: 1px solid $color-circle
+        top: 0
+        left: 0
         animation-name: rotation
         animation-duration: 30s
         animation-iteration-count: infinite
@@ -229,17 +249,89 @@ button
 
         100%
           transform: rotate(360deg)
-      .circle:before
+      .circle-1:before
         content: ""
         position: absolute
         right: 50%
-        top: -6px
-        width: 10px
-        height: 10px
+        top: -5px
+        width: 9px
+        height: 9px
         border-radius: 50%
         background-color: $color-white
-      .cable-img
+      .circle-2
         position: absolute
-        z-index: 30
+        z-index: 25
+        width: 520px
+        height: 520px
+        border-radius: 50%
+        border: 1px solid $color-circle
+        left: 1%
+        top: 1%
+        animation-name: rotation
+        animation-duration: 20s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+      @keyframes rotation
+        0%
+          transform: rotate(0deg)
 
+        100%
+          transform: rotate(360deg)
+      .circle-2:before
+        content: ""
+        position: absolute
+        right: 50%
+        top: -15px
+        width: 18px
+        height: 18px
+        border-radius: 50%
+        background-color: $color-white
+
+      .circle-3
+        position: absolute
+        z-index: 25
+        width: 465px
+        height: 465px
+        border-radius: 50%
+        border: 1px solid $color-circle
+        left: 6%
+        top: 6%
+        animation-name: rotation
+        animation-duration: 40s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+      @keyframes rotation
+        0%
+          transform: rotate(0deg)
+
+        100%
+          transform: rotate(360deg)
+      .circle-3:before
+        content: ""
+        position: absolute
+        right: 50%
+        top: -37px
+        width: 9px
+        height: 9px
+        border-radius: 50%
+        background-color: $color-white
+
+      .circle-4
+        position: absolute
+        z-index: 25
+        width: 440px
+        height: 440px
+        border-radius: 50%
+        background-color: $color-white
+        left: 8%
+        top: 8%
+      .circle-5
+        position: absolute
+        z-index: 25
+        width: 320px
+        height: 320px
+        border-radius: 50%
+        background-color: $color-darkgrey
+        left: 20%
+        top: 20%
 
