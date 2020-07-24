@@ -283,7 +283,60 @@ button {
       .container .header .header-menu .active {
         left: 0; }
   .container .main {
-    position: relative; }
+    position: relative;
+    padding-top: 70px; }
+    .container .main .main-promo .main-title {
+      font-size: 3.6rem;
+      font-weight: 400;
+      color: #ffffff;
+      width: 390px;
+      line-height: 45px;
+      font-family: Oswald,sans-serif;
+      text-transform: uppercase;
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      @media screen and (max-width: 1199px) {
+        .container .main .main-promo .main-title {
+          width: 300px; } }
+    .container .main .main-promo .main-cable {
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      top: 50px; }
+      @media screen and (max-width: 1199px) {
+        .container .main .main-promo .main-cable {
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          width: 330px; } }
+      .container .main .main-promo .main-cable .cable {
+        position: relative;
+        margin-right: 70px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #8b94a7; }
+      .container .main .main-promo .main-cable .cable:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 22px;
+        height: 1px;
+        background-color: #8b94a7;
+        top: 50%;
+        right: -50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+      .container .main .main-promo .main-cable .cable:last-child {
+        margin-right: 0; }
+      .container .main .main-promo .main-cable .cable:last-child:after {
+        display: none; }
+      @media screen and (max-width: 1199px) {
+        .container .main .main-promo .main-cable .cable:nth-child(3) {
+          margin-right: 0; } }
+      @media screen and (max-width: 1199px) {
+        .container .main .main-promo .main-cable .cable:nth-child(3):after {
+          display: none; } }
     .container .main .main-image {
       position: absolute;
       width: 535px;
