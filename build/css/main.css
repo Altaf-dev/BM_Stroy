@@ -373,7 +373,7 @@ button {
       .container .main .main-image .cable-img {
         position: absolute;
         z-index: 30;
-        top: 2%;
+        top: -6%;
         left: 50%;
         -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
