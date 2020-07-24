@@ -307,30 +307,33 @@ button {
         border: 1px solid #6b6f78;
         top: 0;
         left: 0;
-        -webkit-animation-name: rotation;
-        animation-name: rotation;
-        -webkit-animation-duration: 30s;
-        animation-duration: 30s;
+        -webkit-transform: rotate(130deg);
+        -ms-transform: rotate(130deg);
+        transform: rotate(130deg);
+        -webkit-animation-name: rotation1;
+        animation-name: rotation1;
+        -webkit-animation-duration: 20s;
+        animation-duration: 20s;
         -webkit-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
         -webkit-animation-timing-function: linear;
         animation-timing-function: linear; }
 
-@-webkit-keyframes rotation {
+@-webkit-keyframes rotation1 {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
+    -webkit-transform: rotate(130deg);
+    transform: rotate(130deg); }
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
+    -webkit-transform: rotate(490deg);
+    transform: rotate(490deg); } }
 
-@keyframes rotation {
+@keyframes rotation1 {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
+    -webkit-transform: rotate(130deg);
+    transform: rotate(130deg); }
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
+    -webkit-transform: rotate(490deg);
+    transform: rotate(490deg); } }
       .container .main .main-image .circle-1:before {
         content: "";
         position: absolute;
@@ -349,22 +352,33 @@ button {
         border: 1px solid #6b6f78;
         left: 1%;
         top: 1%;
-        -webkit-animation-name: rotation;
-        animation-name: rotation;
-        -webkit-animation-duration: 20s;
-        animation-duration: 20s;
+        -webkit-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+        -webkit-animation-name: rotation2;
+        animation-name: rotation2;
+        -webkit-animation-duration: 25s;
+        animation-duration: 25s;
         -webkit-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
         -webkit-animation-timing-function: linear;
         animation-timing-function: linear; }
 
-@keyframes rotation {
+@-webkit-keyframes rotation2 {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg); }
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
+    -webkit-transform: rotate(330deg);
+    transform: rotate(330deg); } }
+
+@keyframes rotation2 {
+  0% {
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg); }
+  100% {
+    -webkit-transform: rotate(330deg);
+    transform: rotate(330deg); } }
       .container .main .main-image .circle-2:before {
         content: "";
         position: absolute;
@@ -383,22 +397,33 @@ button {
         border: 1px solid #6b6f78;
         left: 6%;
         top: 6%;
-        -webkit-animation-name: rotation;
-        animation-name: rotation;
-        -webkit-animation-duration: 40s;
-        animation-duration: 40s;
+        -webkit-transform: rotate(230deg);
+        -ms-transform: rotate(230deg);
+        transform: rotate(230deg);
+        -webkit-animation-name: rotation3;
+        animation-name: rotation3;
+        -webkit-animation-duration: 30s;
+        animation-duration: 30s;
         -webkit-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
         -webkit-animation-timing-function: linear;
         animation-timing-function: linear; }
 
-@keyframes rotation {
+@-webkit-keyframes rotation3 {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
+    -webkit-transform: rotate(230deg);
+    transform: rotate(230deg); }
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
+    -webkit-transform: rotate(590deg);
+    transform: rotate(590deg); } }
+
+@keyframes rotation3 {
+  0% {
+    -webkit-transform: rotate(230deg);
+    transform: rotate(230deg); }
+  100% {
+    -webkit-transform: rotate(590deg);
+    transform: rotate(590deg); } }
       .container .main .main-image .circle-3:before {
         content: "";
         position: absolute;
