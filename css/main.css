@@ -292,7 +292,10 @@ textarea {
   .container .main {
     position: relative;
     padding-top: 70px; }
-    .container .main .main-promo .main-title {
+    @media screen and (max-width: 767px) {
+      .container .main {
+        padding-top: 30px; } }
+    .container .main .container .main-promo .main-title {
       font-size: 3.6rem;
       font-weight: 400;
       color: #ffffff;
@@ -303,81 +306,34 @@ textarea {
       margin-top: 30px;
       margin-bottom: 30px; }
       @media screen and (max-width: 1199px) {
-        .container .main .main-promo .main-title {
+        .container .main .container .main-promo .main-title {
           width: 300px; } }
-    .container .main .main-promo .main-cable {
-      position: absolute;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      top: 50px; }
-      @media screen and (max-width: 1199px) {
-        .container .main .main-promo .main-cable {
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-          width: 330px; } }
-      .container .main .main-promo .main-cable .cable {
-        position: relative;
-        margin-right: 70px;
-        font-size: 1.6rem;
-        font-weight: 700;
-        color: #8b94a7; }
-      .container .main .main-promo .main-cable .cable:after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 22px;
-        height: 1px;
-        background-color: #8b94a7;
-        top: 50%;
-        right: -50px;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%); }
-      .container .main .main-promo .main-cable .cable:last-child {
-        margin-right: 0; }
-      .container .main .main-promo .main-cable .cable:last-child:after {
-        display: none; }
-      @media screen and (max-width: 1199px) {
-        .container .main .main-promo .main-cable .cable:nth-child(3) {
-          margin-right: 0; } }
-      @media screen and (max-width: 1199px) {
-        .container .main .main-promo .main-cable .cable:nth-child(3):after {
-          display: none; } }
-    .container .main .main-promo .main-promo {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      width: 580px;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      @media screen and (max-width: 1199px) {
-        .container .main .main-promo .main-promo {
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column;
-          -webkit-box-align: start;
-          -ms-flex-align: start;
-          align-items: start; } }
-      .container .main .main-promo .main-promo .main-promo-title {
-        font-size: 6rem;
-        font-weight: 800; }
-      .container .main .main-promo .main-promo .main-promo-text {
-        margin-left: 20px;
-        line-height: 20px;
-        font-size: 1.6rem; }
-        @media screen and (max-width: 1199px) {
-          .container .main .main-promo .main-promo .main-promo-text {
-            margin-left: 0; } }
-    .container .main .main-image {
+      @media screen and (max-width: 767px) {
+        .container .main .container .main-promo .main-title {
+          margin-top: 0;
+          margin-bottom: 0;
+          width: 100%;
+          font-size: 2.8rem;
+          line-height: 34px; } }
+    .container .main .container .main-promo .main-image {
       position: absolute;
       width: 535px;
       height: 535px;
       right: -45px;
       top: 30px; }
-      .container .main .main-image .cable-img {
+      @media screen and (max-width: 1199px) {
+        .container .main .container .main-promo .main-image {
+          width: 445px;
+          height: 445px; } }
+      @media screen and (max-width: 768px) {
+        .container .main .container .main-promo .main-image {
+          position: relative;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          width: 280px;
+          height: 280px; } }
+      .container .main .container .main-promo .main-image .cable-img {
         position: absolute;
         z-index: 30;
         top: -6%;
@@ -385,11 +341,17 @@ textarea {
         -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
         transform: translate(-50%); }
-      .container .main .main-image .circle-1 {
+        @media screen and (max-width: 1199px) {
+          .container .main .container .main-promo .main-image .cable-img {
+            max-height: 440px; } }
+        @media screen and (max-width: 768px) {
+          .container .main .container .main-promo .main-image .cable-img {
+            max-height: 285px; } }
+      .container .main .container .main-promo .main-image .circle-1 {
         position: absolute;
         z-index: 25;
-        width: 530px;
-        height: 530px;
+        width: 100%;
+        height: 100%;
         border-radius: 50%;
         border: 1px solid #6b6f78;
         top: 0;
@@ -421,7 +383,7 @@ textarea {
   100% {
     -webkit-transform: rotate(490deg);
     transform: rotate(490deg); } }
-      .container .main .main-image .circle-1:before {
+      .container .main .container .main-promo .main-image .circle-1:before {
         content: "";
         position: absolute;
         right: 50%;
@@ -430,11 +392,11 @@ textarea {
         height: 9px;
         border-radius: 50%;
         background-color: #ffffff; }
-      .container .main .main-image .circle-2 {
+      .container .main .container .main-promo .main-image .circle-2 {
         position: absolute;
         z-index: 25;
-        width: 520px;
-        height: 520px;
+        width: 98%;
+        height: 98%;
         border-radius: 50%;
         border: 1px solid #6b6f78;
         left: 1%;
@@ -466,7 +428,7 @@ textarea {
   100% {
     -webkit-transform: rotate(330deg);
     transform: rotate(330deg); } }
-      .container .main .main-image .circle-2:before {
+      .container .main .container .main-promo .main-image .circle-2:before {
         content: "";
         position: absolute;
         right: 50%;
@@ -475,11 +437,11 @@ textarea {
         height: 18px;
         border-radius: 50%;
         background-color: #ffffff; }
-      .container .main .main-image .circle-3 {
+      .container .main .container .main-promo .main-image .circle-3 {
         position: absolute;
         z-index: 25;
-        width: 465px;
-        height: 465px;
+        width: 88%;
+        height: 88%;
         border-radius: 50%;
         border: 1px solid #6b6f78;
         left: 6%;
@@ -511,7 +473,7 @@ textarea {
   100% {
     -webkit-transform: rotate(590deg);
     transform: rotate(590deg); } }
-      .container .main .main-image .circle-3:before {
+      .container .main .container .main-promo .main-image .circle-3:before {
         content: "";
         position: absolute;
         right: 50%;
@@ -520,61 +482,99 @@ textarea {
         height: 9px;
         border-radius: 50%;
         background-color: #ffffff; }
-      .container .main .main-image .circle-4 {
+      .container .main .container .main-promo .main-image .circle-4 {
         position: absolute;
         z-index: 25;
-        width: 440px;
-        height: 440px;
+        width: 84%;
+        height: 84%;
         border-radius: 50%;
         background-color: #ffffff;
         left: 8%;
         top: 8%; }
-      .container .main .main-image .circle-5 {
+      .container .main .container .main-promo .main-image .circle-5 {
         position: absolute;
         z-index: 25;
-        width: 320px;
-        height: 320px;
+        width: 60%;
+        height: 60%;
         border-radius: 50%;
         background-color: #464b56;
         left: 20%;
         top: 20%; }
-    .container .main .main-form {
+    .container .main .container .main-promo .main-cable {
+      position: absolute;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      padding: 30px 25px;
-      margin-top: 30px;
-      width: 635px;
-      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.22);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.22);
-      border-radius: 5px; }
-      .container .main .main-form .form-title {
-        font-size: 2rem; }
-      .container .main .main-form .form {
-        padding-top: 10px; }
-        .container .main .main-form .form .input {
-          font-size: 1.4rem;
-          color: #ffffff;
-          border-bottom: 1px solid #ffffff;
-          padding-bottom: 15px;
-          width: 190px; }
-        .container .main .main-form .form .input[type=tel] {
-          margin-left: 20px; }
-        .container .main .main-form .form .input:focus {
-          background-color: inherit; }
-        .container .main .main-form .form .submit {
-          padding: 16px 30px;
-          border-radius: 25px;
-          font-size: 1.4rem;
-          color: #ffffff;
-          background: #ff8315;
-          background: -webkit-gradient(linear, left top, right top, from(#ff8315), to(#fdb40f));
-          background: -o-linear-gradient(left, #ff8315 0%, #fdb40f 100%);
-          background: linear-gradient(90deg, #ff8315 0%, #fdb40f 100%);
-          margin-left: 25px; }
-      .container .main .main-form .label .upload {
+      top: 50px; }
+      @media screen and (max-width: 1199px) {
+        .container .main .container .main-promo .main-cable {
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          width: 330px; } }
+      @media screen and (max-width: 767px) {
+        .container .main .container .main-promo .main-cable {
+          position: static;
+          margin-top: 50px;
+          width: 280px; } }
+      .container .main .container .main-promo .main-cable .cable {
+        position: relative;
+        margin-right: 70px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #8b94a7; }
+      .container .main .container .main-promo .main-cable .cable:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 22px;
+        height: 1px;
+        background-color: #8b94a7;
+        top: 50%;
+        right: -50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+      .container .main .container .main-promo .main-cable .cable:last-child {
+        margin-right: 0; }
+      .container .main .container .main-promo .main-cable .cable:last-child:after {
         display: none; }
+      @media screen and (max-width: 1199px) {
+        .container .main .container .main-promo .main-cable .cable:nth-child(3) {
+          margin-right: 0; } }
+      @media screen and (max-width: 1199px) {
+        .container .main .container .main-promo .main-cable .cable:nth-child(3):after {
+          display: none; } }
+    .container .main .container .main-promo .main-promo-cable {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 580px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      @media screen and (max-width: 1199px) {
+        .container .main .container .main-promo .main-promo-cable {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
+          align-items: start; } }
+      @media screen and (max-width: 767px) {
+        .container .main .container .main-promo .main-promo-cable {
+          width: 100%; } }
+      .container .main .container .main-promo .main-promo-cable .main-promo-title {
+        font-size: 6rem;
+        font-weight: 800; }
+        @media screen and (max-width: 767px) {
+          .container .main .container .main-promo .main-promo-cable .main-promo-title {
+            font-size: 4.8rem;
+            width: 120px; } }
+      .container .main .container .main-promo .main-promo-cable .main-promo-text {
+        margin-left: 20px;
+        line-height: 20px;
+        font-size: 1.6rem; }
+        @media screen and (max-width: 1199px) {
+          .container .main .container .main-promo .main-promo-cable .main-promo-text {
+            margin-left: 0; } }
