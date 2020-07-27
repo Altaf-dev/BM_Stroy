@@ -1,5 +1,7 @@
 html {
-  font-size: 10px; }
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
 
 body {
   font-family: Open Sans,sans-serif;
@@ -22,9 +24,14 @@ a, li, ul {
   text-decoration: none;
   background-color: transparent; }
 
-button {
+button,
+input,
+textarea {
+  border: none;
+  background-color: transparent;
+  overflow: visible;
   outline: none;
-  border: none; }
+  padding: 0; }
 
 .container {
   width: 100%;
@@ -531,3 +538,43 @@ button {
         background-color: #464b56;
         left: 20%;
         top: 20%; }
+    .container .main .main-form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 30px 25px;
+      margin-top: 30px;
+      width: 635px;
+      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.22);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.22);
+      border-radius: 5px; }
+      .container .main .main-form .form-title {
+        font-size: 2rem; }
+      .container .main .main-form .form {
+        padding-top: 10px; }
+        .container .main .main-form .form .input {
+          font-size: 1.4rem;
+          color: #ffffff;
+          border-bottom: 1px solid #ffffff;
+          padding-bottom: 15px;
+          width: 190px; }
+        .container .main .main-form .form .input[type=tel] {
+          margin-left: 20px; }
+        .container .main .main-form .form .input:focus {
+          background-color: inherit; }
+        .container .main .main-form .form .submit {
+          padding: 16px 30px;
+          border-radius: 25px;
+          font-size: 1.4rem;
+          color: #ffffff;
+          background: #ff8315;
+          background: -webkit-gradient(linear, left top, right top, from(#ff8315), to(#fdb40f));
+          background: -o-linear-gradient(left, #ff8315 0%, #fdb40f 100%);
+          background: linear-gradient(90deg, #ff8315 0%, #fdb40f 100%);
+          margin-left: 25px; }
+      .container .main .main-form .label .upload {
+        display: none; }
