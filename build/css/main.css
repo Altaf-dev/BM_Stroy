@@ -10,8 +10,7 @@ body {
   -o-transition: 0.3s all;
   transition: 0.3s all;
   scroll-behavior: smooth;
-  overflow-x: hidden;
-  min-height: 1000px; }
+  overflow-x: hidden; }
 
 main {
   display: block; }
@@ -603,6 +602,9 @@ textarea {
       font-weight: 700;
       color: #ffffff;
       margin-bottom: 30px; }
+      @media screen and (max-width: 767px) {
+        .main .form-item .form-title {
+          text-align: center; } }
     .main .form-item .input-form {
       width: 190px;
       border-bottom: 1px solid #ffffff;
@@ -610,24 +612,20 @@ textarea {
       font-weight: 400;
       padding-bottom: 14px;
       color: #ffffff; }
+      @media screen and (max-width: 767px) {
+        .main .form-item .input-form {
+          width: 100%;
+          margin-bottom: 20px; } }
     .main .form-item .input-form[type=tel] {
       margin-left: 20px; }
+      @media screen and (max-width: 767px) {
+        .main .form-item .input-form[type=tel] {
+          margin-left: 0; } }
   .main .btn {
     margin-top: 15px; }
-    .main .btn .submit-btn {
-      position: absolute;
-      top: 80px;
-      right: 40px;
-      padding: 16px 30px;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 1.4rem;
-      color: #ffffff;
-      background: #ff8315;
-      background: -webkit-gradient(linear, left top, right top, from(#ff8315), to(#fdb40f));
-      background: -o-linear-gradient(left, #ff8315 0%, #fdb40f 100%);
-      background: linear-gradient(90deg, #ff8315 0%, #fdb40f 100%);
-      margin-left: 25px; }
+    @media screen and (max-width: 767px) {
+      .main .btn {
+        text-align: center; } }
     .main .btn .upload-file {
       position: relative;
       cursor: pointer;
@@ -656,6 +654,57 @@ textarea {
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s; }
-
-.test {
-  background-color: red; }
+    .main .btn .submit-btn {
+      position: absolute;
+      top: 80px;
+      right: 40px;
+      padding: 16px 30px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1.4rem;
+      color: #ffffff;
+      background: #ff8315;
+      background: -webkit-gradient(linear, left top, right top, from(#ff8315), to(#fdb40f));
+      background: -o-linear-gradient(left, #ff8315 0%, #fdb40f 100%);
+      background: linear-gradient(90deg, #ff8315 0%, #fdb40f 100%);
+      margin-left: 25px; }
+      @media screen and (max-width: 767px) {
+        .main .btn .submit-btn {
+          position: static;
+          margin-top: 20px; } }
+  .main .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 95px; }
+    @media screen and (max-width: 320px) {
+      .main .info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
+    .main .info .info-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      @media screen and (max-width: 1199px) {
+        .main .info .info-item {
+          display: block; } }
+      @media screen and (max-width: 320px) {
+        .main .info .info-item {
+          margin-bottom: 20px; } }
+      .main .info .info-item .info-image {
+        height: 140px;
+        margin-right: 20px; }
+      .main .info .info-item .info-title {
+        font-size: 1.4rem;
+        width: 150px; }
